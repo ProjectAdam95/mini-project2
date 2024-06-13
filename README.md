@@ -18,3 +18,6 @@ This application proviedes a view of cards/snippets with code below on how to us
 - Highlight on Click: Each CSS snippet can easily be highlighted for copying on click using the CSS user-select property.
 - Background Color: Must incorporate a background color using a CSS linear-gradient function.
 - CSS Transition: Must incorporate a bit of animation using the CSS transition property.
+
+## LIVE PAGE BELOW (click to view page preview)
+- https://projectadam95.github.io/mini-project2/
