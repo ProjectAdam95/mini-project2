@@ -1,0 +1,148 @@
+/* CSS variables for colors */
+:root {
+  --primary-color: #e4e4e4; /* The primary color used throughout the stylesheet */
+  --background-color: #d8d8d8; /* Background color for elements */
+  --text-color: #1e1e1e; /* Main color for text content */
+  --header-bg-color: #B8AE79; /* Background color for the header */
+  --snippet-bg-color: #B8AE79; /* Background color for snippet elements */
+  --snippet-border-color: #e4e4e4; /* Border color for snippet elements */
+  --pre-bg-color: #97be9d; /* Background color for preformatted text blocks */
+  --hover-shadow-color: rgba(255, 123, 0, 0.7); /* Color for the glow effect on hover */
+}
+
+/* Styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the header */
+header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, var(--header-bg-color), var(--background-color));
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+header p {
+  font-size: 0.5cm;
+  margin: 10px 0 0;
+}
+
+/* Styling for the main content area */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Style for the cheatsheet container */
+.cheatsheet {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+/* Styling for each snippet */
+.snippet {
+  background-color: var(--snippet-bg-color);
+  border: 1px dashed var(--snippet-border-color);
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+  box-sizing: border-box;
+  min-width: 300px;
+  max-width: 500px;
+  flex: 0 0 300px;
+}
+
+/* Adds a glow effect around the .snippet element on hover */
+.snippet:hover {
+  box-shadow: 0 0 20px var(--hover-shadow-color), 0 0 40px var(--hover-shadow-color);
+}
+
+.snippet h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.snippet h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: var(--primary-color);
+  margin-top: 10px;
+}
+
+.snippet p {
+  font-size: 1em;
+}
+
+/* Styling for the preformatted text */
+pre {
+  background-color: var(--pre-bg-color);
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 0;
+  color: var(--text-color);
+  user-select: text;
+}
+
+/* Styling for the footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--header-bg-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.snippet h2::after {
+  display: block;
+  height: 2px;
+  background: var(--primary-color);
+  margin-top: 10px;
+}
+
+/* Media query for tablets and larger screens */
+@media screen and (min-width: 768px) {
+  .cheatsheet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 992px) {
+  .cheatsheet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+
+
