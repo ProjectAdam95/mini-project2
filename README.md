@@ -19,5 +19,8 @@ This application proviedes a view of cards/snippets with code below on how to us
 - Background Color: Must incorporate a background color using a CSS linear-gradient function.
 - CSS Transition: Must incorporate a bit of animation using the CSS transition property.
 
-## LIVE PAGE BELOW (click to view page preview)
+## LIVE PAGE BELOW (click to view live page)
 - https://projectadam95.github.io/mini-project2/
+
+##  Gallery 
+- https://imgur.com/19Nuurd
